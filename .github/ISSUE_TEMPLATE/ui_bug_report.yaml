@@ -20,9 +20,25 @@ body:
         3. The browser console output or screenshots demonstrating the issue.
 
         4. Additional details that may help us reproduce your issue.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: First check
+      description: Please confirm and check all the following options.
+      options:
+        - label: I added a descriptive title to this issue.
+          required: true
+        - label: I used the GitHub search to find a similar issue and didn't find it.
+          required: true
+        - label: I refreshed the page and this issue still occurred.
+          required: true
+        - label: I checked if this issue was specific to the browser I was using by testing with a different browser.
+          required: true
+
   - type: textarea
     attributes:
-      label: Describe the bug
+      label: Bug summary
       description: A clear and concise description of what the bug is.
     validations:
       required: true
@@ -36,20 +52,32 @@ body:
 
   - type: textarea
     attributes:
-      label: Issue
+      label: Error
       description: >
         Provide screenshots of the issue if applicable.
-        Include any errors in the console if applicable. For help accessing the console on your browser, see [this article](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
+        Include any errors in the console. For help accessing the console on your browser, see [this article](https://support.airtable.com/hc/en-us/articles/232313848-How-to-open-the-developer-console).
     validations:
       required: true
 
+
+  - type: checkboxes
+    attributes:
+      label: Browers
+      description: Which browsers was this bug reproduced on? Please check if your issue is specific to your browser by testing on another browser.
+      options:
+        - label: Chrome
+        - label: Firefox
+        - label: Safari
+        - label: Edge
+
+
   - type: textarea
     attributes:
-      label: Versions
+      label: Prefect version
       description: >
         If running the UI yourself, please provide information about host's Prefect version and environment. 
         The easiest way to retrieve all of the information we require is the `prefect version` command.
-        If you are using Prefect Cloud, make note of that here instead.
+        If you are using Prefect Cloud, you may leave this field blank.
       value: |
         ```
 
@@ -57,25 +85,14 @@ body:
 
         ```
     validations:
-      required: true
-
-  - type: dropdown
-    attributes:
-      label: Brower
-      description: Which browser was this bug reproduced on?
-      options:
-        - Chrome
-        - Firefox
-        - Safari
-        - Edge
-        - Internet Explorer
-    validations:
-      required: true
+      required: false
 
   - type: textarea
     attributes:
       label: Additional context
-      description: Add any other context about the problem here. For example, additional browsers tested on and browser versions.
+      description: >
+        Add any other context about the problem here. 
+        If the bug was only reproducible on a single browser please note the other browsers you tested with.
     validations:
       required: false
 
