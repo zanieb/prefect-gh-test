@@ -15,19 +15,21 @@ Happy engineering!
 ### Checklist
 <!-- These boxes may be checked after opening the pull request. Delete sections that do not apply. -->
 
-This pull request is:
+This pull request is
 
-A documentation / typographical error fix
-	- No tests or issue needed, thanks!
+#### A documentation / typographical error fix
+	No checks are necessary, thanks!
 
 A short code fix
-	- [ ] I have referenced the related issue by including "closes `<link to issue>`"  
-        - If no issue exists, please create a bug report issue
-	- [ ] I have added or updated tests
 
-A new feature implementation
-	- [ ] I have referenced the related issue by including "closes `<link to issue>`"
-	- [ ] I have added or updated tests
-    - [ ] I have included a minimal example that can be executed to see this feature in action
+- [ ] I have referenced the related issue by including "closes `<link to issue>`"  
+    -  If no issue exists, please create a bug report issue
+- [ ] I have added or updated tests
+
+#### A new feature implementation
+
+- [ ] I have referenced the related issue by including "closes `<link to issue>`"
+- [ ] I have added or updated tests
+- [ ] I have included a minimal example that can be executed to see this feature in action
 
 
