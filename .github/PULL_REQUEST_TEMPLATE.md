@@ -9,29 +9,20 @@ Thanks for opening a pull request to Prefect! We've got a few requests to help u
 Happy engineering!
 -->
 
+<!-- Include an overview here -->
+
 ### Example
-<!-- Share an example of the change in action. A code blurb is best if applicable. -->
+<!-- 
+Share an example of the change in action.
+
+A code blurb is best. Changes to features should include an example that is executable by a new user.
+If changing documentation, a link to a preview of the page or a screenshot is great.
+ -->
 
 ### Checklist
-<!-- These boxes may be checked after opening the pull request. Delete sections that do not apply. -->
+<!-- These boxes may be checked after opening the pull request. -->
 
-This pull request is...
-
-#### A documentation / typographical error fix
-
-No checks are necessary, thanks!
-
-#### A short code fix
-
-- [ ] I have referenced the related issue by including "closes `<link to issue>`"  
-    -  If no issue exists, please create a bug report issue
-- [ ] I have added or updated tests
-
-#### A new feature implementation
-
-- [ ] I have referenced the related issue by including "closes `<link to issue>`"
-	- If you are adding a feature without a proposal issue, it is less likely to be accepted.
-- [ ] I have added or updated tests
-- [ ] I have included a minimal example that can be executed to see this feature in action
-
-
+- [ ] This pull request references any related issue by including "closes `<link to issue>`"
+	- If no issue exists and your change is not a small fix, please [create an issue](https://github.com/PrefectHQ/prefect/issues/new/choose) first.
+- [ ] This pull request includes tests or only affects documentation.
+- [ ] This pull request includes a `bug`, `feature`, `enhancement`, or `maintenance` label categorizing the change.
