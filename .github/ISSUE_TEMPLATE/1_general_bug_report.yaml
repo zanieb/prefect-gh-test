@@ -65,7 +65,7 @@ body:
         Provide the full exception tracebacks.
         If the message is a warning, run your program with the ``-Werror`` flag:   ``python -Werror my_flow.py``
       placeholder: "# Copy complete stack trace and error message here, including log output if applicable."
-      render: python
+      render: python3
     validations:
       required: false
 
