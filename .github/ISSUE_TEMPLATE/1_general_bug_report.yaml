@@ -65,12 +65,7 @@ body:
         Provide the full exception tracebacks.
         If the message is a warning, run your program with the ``-Werror`` flag:   ``python -Werror my_flow.py``
       placeholder: "# Copy complete stack trace and error message here, including log output if applicable."
-      value: |
-        ```
-
-        # Copy complete stack trace and error message here, including log output if applicable.
-
-        ```
+      render: python
     validations:
       required: false
 
@@ -79,13 +74,10 @@ body:
       label: Versions
       description: >
         Provide information about your Prefect version and environment. The easiest way to retrieve all of the information we require is the `prefect version` command.
+        Please do not just write "2.0". The command provides additional context such as your operating system, Prefect API type, Python version, etc. that we need to diagnose your problem.
         If using Prefect 1.x, it is useful to also include the output of `prefect diagnostics`.
-      value: |
-        ```
-
-        # Copy output of `prefect version` here
-
-        ```
+      placeholder: "# Copy output of the `prefect version` command here"
+      render: text
     validations:
       required: true
 
